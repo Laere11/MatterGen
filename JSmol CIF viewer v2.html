@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JSmol CIF Viewer</title>
+  <!-- Load the JSmol library from a public server.
+       If you have JSmol locally, adjust the script paths accordingly. -->
+  <script type="text/javascript" src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js"></script>
+  <script type="text/javascript">
+    // Basic JSmol configuration with no default script (no immediate load).
+    var Info = {
+      width: 600,
+      height: 400,
+      debug: false,
+      color: "0xFFFFFF",
+      use: "HTML5", // or "WEBGL"
+      j2sPath: "https://chemapps.stolaf.edu/jmol/jsmol/j2s",
+      // No script: we do NOT load anything by default
+      script: "",
+      disableJ2SLoadMonitor: true,
+      disableInitialConsole: true
+    };
+  </script>
+</head>
+
+<body>
+  <h1>JSmol CIF Viewer</h1>
+  <p>
+    This page does not load any file by default. To view a CIF:
+    <br />
+    <strong>1)</strong> Right-click (or control-click) in the viewer.<br />
+    <strong>2)</strong> Select <em>File &gt; Load...</em> from the JSmol menu.<br />
+    <strong>3)</strong> Choose your local <code>.cif</code> file.<br />
+    (Depending on your browser’s security settings, loading local files may still be restricted.)
+  </p>
+
+  <!-- Container for the JSmol applet -->
+  <div id="viewerDiv"></div>
+
+  <script type="text/javascript">
+    // Create and embed the JSmol applet into 'viewerDiv'
+    Jmol.getApplet("myJmolApplet", Info);
+    document.getElementById("viewerDiv").innerHTML = Jmol.getAppletHtml("myJmolApplet");
+  </script>
+</body>
+</html>
