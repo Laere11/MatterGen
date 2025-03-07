@@ -1,0 +1,55 @@
+{
+  "crystal_structure": {
+    "atomic_positions": [
+      {
+        "wyckoff": "2a",
+        "element": "Cr",
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      {
+        "wyckoff": "4e",
+        "element": "Ta",
+        "x": "0.330223",
+        "y": "0.487641",
+        "z": "0.832025"
+      },
+      {
+        "wyckoff": "4e",
+        "element": "O",
+        "x": "0.60122",
+        "y": "0.72719",
+        "z": "0.31164"
+      },
+      {
+        "wyckoff": "4e",
+        "element": "O",
+        "x": "0.687077",
+        "y": "0.313914",
+        "z": "0.000685"
+      },
+      {
+        "wyckoff": "4e",
+        "element": "O",
+        "x": "0.973846",
+        "y": "0.811064",
+        "z": "0.176491"
+      }
+    ],
+    "symmetry": {
+      "crystal_system": "Monoclinic",
+      "lattice_system": "Monoclinic",
+      "hall_number": "-P 2ybc",
+      "international_number": 14,
+      "symbol": "P2₁/c",
+      "point_group": "2/m"
+    },
+    "structure_meta": {
+      "number_of_atoms": 18,
+      "density": "7.75 g·cm⁻³",
+      "dimensionality": "",
+      "possible_oxidation_states": "Ta⁵⁺, Cr²⁺, O²⁻"
+    }
+  }
+}
